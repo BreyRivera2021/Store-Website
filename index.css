@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  background-color: black;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#footer p {
+  margin: auto 0;
+}
+
+#logo {
+  font-size: 3rem;
+  float: left;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+#logo:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.navbar > ul > a {
+  color: white;
+}
+
+.navbar > ul > a > li{
+  display: inline-block;
+  padding: 1rem;
+}
+
+.navbar > ul > a > li {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar > ul > a > li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.navbar > ul > a > li:hover:after {
+  width: 100%;
+  background: white;
+}
+
+#signin {
+  border-right: 1px solid white;
+}
+
+#signin, #signup {
+  float: right;
+  text-decoration: none;
+  margin: 0.75rem 0;
+  padding: 0.25rem 1rem;
+}
+
+#cart {
+  font-size: 1.5rem;
+  padding: 1rem;
+  float: right;
+  color: white;
+}
+
+#signin:hover, #signup:hover, #cart:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+}
+
+.sale {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  top: 82.667px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+#saletext {
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: bold;
+  color: red;
+}
+
+.header {
+  background-image: url('./images/AdobeStock_249275256-1024x547.jpeg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  margin-top: 102.667px;
+  min-height: 88.82vh;
+  display: flex;
+  position: relative;
+}
+
+.header-text {
+  min-width: 50%;
+  margin: auto auto;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
+
+.header-text > h1 {
+  font-size: 3rem;
+}
+
+.header-text > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.header-text > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#arrow {
+  font-size: 1rem;
+}
+
+#hotItems, #newArrivals {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+#hotTitle {
+  text-align: center;
+}
+
+#fire {
+  color: orangered;
+}
+
+#newTitle {
+  text-align: center;
+}
+
+#boxes {
+  color: rgb(0, 153, 255);
+}
+
+#more-hot {
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#more-hot:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.items-container{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-card {
+  background-color: white;
+  height: auto;
+  width: 200px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.item-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: auto;
+  
+}
+
+.image-rounded {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item-text {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+
+.item-text > h3 {
+  padding: 0;
+  margin: 0;
+}
+.item-text > h4 {
+  padding: 0;
+  margin: 0;
+}
+.item-text > h5 {
+  padding: 0;
+  margin: 0;
+}
+
+#star {
+  color: rgb(226, 226, 0);
+}
+
+.spacer {
+  flex: 1;
+}
+
+#hr {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.hr {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 3rem 0;
+}
