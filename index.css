@@ -107,6 +107,45 @@ body {
   border-bottom: none;
 }
 
+/*#region Side Nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+.sidenav a {
+  padding: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.navOpenButton{
+  float: right;
+  font-size: 2.5rem;
+  color: white;
+  display: none;
+  padding: 0 0.25rem;
+}
+.sidenav-div {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+/*#endregion*/
+
 .sale {
   position: fixed;
   z-index: 1;
@@ -270,4 +309,29 @@ body {
 .hr {
   border: 1px solid rgba(0, 0, 0, 0.05);
   margin: 3rem 0;
+}
+
+@media only screen and (max-width: 565px) {
+  .navbar{
+    display: none;
+  }
+  .navOpenButton {
+    display: block;
+  }
+  .sale {
+    top: 50px;
+  }
+  #saletext {
+    padding: 1rem 0;
+  }
+  .header{
+    margin-top: 102px;
+    height: 88.901vh;
+  }
+  #cart, #signin, #signup {
+    float: none;
+  }
+  #logo {
+    float: none;
+  }
 }
