@@ -1,2 +1,2 @@
 # Store-Website
-https://breyrivera2021.github.io/Store-Website/
+https://breyr.github.io/Store-Website/
